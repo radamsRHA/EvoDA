@@ -1,8 +1,8 @@
 ---
 output:
-  word_document: default
-  html_document: default
   pdf_document: default
+  html_document: default
+  word_document: default
 ---
 # EvoDA: Supervised Learning for Discriminating Models of Trait Evolution 
 
@@ -17,7 +17,7 @@ In this tutorial, we introduce **Evolutionary Discriminant Analysis (EvoDA)**, a
 |  |
 |:-----------------------------------------------------------------------|
 | 💡 Tip: Tutorial Manual and where find it: |
-| See the file <https://github.com/radamsRHA/EvoDA/README.md> for detailed instructions, associated R packages, and datasets used in this workflow. |
+| See the file <https://github.com/radamsRHA/EvoDA/> for detailed instructions, associated R packages, and datasets used in this workflow. |
 
 
 # Tutorial Outline
@@ -39,7 +39,7 @@ Before using EvoDA, install the required R packages. This includes the EvoDA hel
 |  |
 |:-----------------------------------------------------------------------|
 | 💡 Note: R version: TraitTrainR was written in R 4.4.0 ("Puppy cup") and we recommend that version or later for installing `TraitTrainR`|
-| 💡 Note: example training and testing datasets are provided in: <https://github.com/radamsRHA/EvoDA/EmpiricalExample>  |
+| 💡 Note: example training and testing datasets are provided in: <https://github.com/radamsRHA/EvoDA/tree/main/EmpiricalExample>  |
 
 ``` r
 install.packages("devtools")
@@ -340,7 +340,7 @@ This ensures that simulated traits (used to train EvoDA) exhibit **variation com
 | 🧠 What is Rejection Sampling? |
 | Rejection sampling is a filtering method where only data points that meet specific empirical criteria are retained. In our case, we compute the standard deviation of **phylogenetically independent contrasts (PICs)** from real gene expression data and use that standard deviation as a benchmark to select comparable simulations. |
 
-First, download the `gene_expression_tpm_matrix_updated_Standard.LogNorm.tsv` provided in the following directory: <https://github.com/radamsRHA/EvoDA/EmpiricalExamples>. This dataset can be sourced from the original publications: 
+First, download the `gene_expression_tpm_matrix_updated_Standard.LogNorm.tsv` provided in the following directory: <https://github.com/radamsRHA/EvoDA/tree/main/EmpiricalExample>. This dataset can be sourced from the original publications: 
 
 Dimayacyac, J.R., Wu, S., Jiang, D. and Pennell, M., 2023. Evaluating the performance of widely used phylogenetic models for gene expression evolution. Genome Biology and Evolution. 15.
 Cope   AL, O’Meara   BC, Gilchrist   MA. 2020. Gene expression of functionally-related genes coevolves across fungal species: detecting coevolution of gene expression using phylogenetic comparative methods. BMC Genomics. 21:1–17.  
